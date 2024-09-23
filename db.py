@@ -1,4 +1,3 @@
-#!/usr/bin/python
 import sqlite3
 def connect_to_db():
     conn = sqlite3.connect('database.db')
@@ -107,3 +106,5 @@ def delete_user(user_id):
     finally:
         conn.close()
     return message
+
+create_db_table()

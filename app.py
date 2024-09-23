@@ -1,5 +1,6 @@
 from flask import Flask, request, jsonify #added to top of file
 from flask_cors import CORS #added to top of file
+from db import get_user_by_id, get_users, insert_user, update_user, delete_user
 app = Flask(__name__)
 CORS(app, resources={r"/*": {"origins": "*"}})
 
